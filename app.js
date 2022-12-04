@@ -30,14 +30,14 @@ function playGame(computerChoice, playerChoice) {
     if (computerChoice === "SCISSORS" && playerChoice === "ROCK") {
         console.log("You Win!")
     }
-    if (playerChoice === "ROCK" && getComputerChoice === "PAPER") {
+    if (getComputerChoice === "PAPER" && playerChoice === "ROCK") {
         console.log("You Lose!")
     }
 
-    if (playerChoice === "PAPER" && getComputerChoice === "SCISSORS") {
+    if (getComputerChoice === "SCISSORS" && playerChoice === "PAPER") {
         console.log("You Lose!")
     }
-    if (playerChoice === "SCISSORS" && getComputerChoice === "ROCK") {
+    if (getComputerChoice === "ROCK" && playerChoice === "SCISSORS") {
         console.log("You Lose!")
     }
 }
