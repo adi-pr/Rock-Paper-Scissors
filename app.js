@@ -42,9 +42,11 @@ function playGame(computerChoice, playerChoice) {
     }
 }
 
+// Stores Selections 
 const computerChoice = getComputerChoice()
 const playerChoice = playerSelection()
 
-
-console.log(computerChoice + ", " + playerChoice)
+// Outputs Game Result
+console.log(`Computer Choice: ${computerChoice}`)
+console.log(`Your Choice: ${playerChoice}`)
 playGame(computerChoice, playerChoice)
