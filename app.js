@@ -42,11 +42,18 @@ function playGame(computerChoice, playerChoice) {
     }
 }
 
-// Stores Selections 
-const computerChoice = getComputerChoice()
-const playerChoice = playerSelection()
+// Runs game 
+function game() {
+    for (let i = 0; i < 5; i++) {
+        // Stores Selections
+        const computerChoice = getComputerChoice()
+        const playerChoice = playerSelection()
+    
+        console.log(`ROUND: ${i}`);
+        console.log(`Computer Choice: ${computerChoice}`)
+        console.log(`Your Choice: ${playerChoice}`)
+        playGame(computerChoice, playerChoice)
+    }
+}
 
-// Outputs Game Result
-console.log(`Computer Choice: ${computerChoice}`)
-console.log(`Your Choice: ${playerChoice}`)
-playGame(computerChoice, playerChoice)
+game()
