@@ -20,7 +20,6 @@ function playGame(computerChoice, playerChoice) {
     if (computerChoice === playerChoice) {
         console.log("Tie Game")
     }
-<<<<<<< HEAD
     if (computerChoice === "ROCK" && playerChoice === "PAPER") {
         console.log("You Win!")
     }
@@ -41,18 +40,11 @@ function playGame(computerChoice, playerChoice) {
     if (playerChoice === "SCISSORS" && getComputerChoice === "ROCK") {
         console.log("You Lose!")
     }
-=======
->>>>>>> 87169e3b6efe349a30b8df955d46dfbe2283c93a
 }
 
 const computerChoice = getComputerChoice()
 const playerChoice = playerSelection()
 
-<<<<<<< HEAD
 
 console.log(computerChoice + ", " + playerChoice)
 playGame(computerChoice, playerChoice)
-=======
-playGame(computerChoice, playerChoice)
-
->>>>>>> 87169e3b6efe349a30b8df955d46dfbe2283c93a
