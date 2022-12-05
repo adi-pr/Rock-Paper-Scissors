@@ -48,7 +48,6 @@ function playGame(computerChoice, playerChoice) {
 }
 
 function game(playerChoice) {
-        // Stores Selections
         const computerChoice = getComputerChoice()
     
         console.log(`Computer Choice: ${computerChoice}, Your Choice: ${playerChoice}`)
@@ -84,13 +83,20 @@ buttons.forEach((button) => {
 
         if (wins === 5) {
             alert("You Won!")
+            wins = 0
+            compWins = 0
         }
         if (compWins === 5) {
             alert("You Lost!")
+            wins = 0
+            compWins = 0
         }
 
 
         content.classList.add('content')
+        playerWins.classList.add('player-wins')
+        computerWins.classList.add('computer-wins')
+
         playerWins.textContent = wins
         computerWins.textContent = compWins
 

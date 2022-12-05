@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 75px;
+}
+
+.buttons {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50pxs;
+}
